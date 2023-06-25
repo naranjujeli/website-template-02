@@ -1,3 +1,3 @@
-# React App Template
+# Website Template (2)
 
-This is just a custom reduced template for future projects I will develop using React, so I don't have to use the `create-react-app` tool that often, which is slower.
+The purpose of this repository is to practice and improve my FrontEnd skills by building a prototype of a site. Content on the site is meaningless and irrelevant since it only works as placeholder.
