@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import NavigationBarToggler from  './NavigationBarToggler';
 import Logo from './Logo';
 import SearchBar from './SearchBar';
@@ -8,9 +10,15 @@ import '../styles/medium/NavigationBar-md.css';
 import '../styles/large/NavigationBar-lg.css';
 
 function NavigationBar() {
+    const [ navbarIsExpanded, setNavbarIsExpanded ] = useState(false);
+
     return (
         <>
             <nav className="NavigationBar">
+                <NavigationBarToggler 
+                navbarIsExpanded={navbarIsExpanded} 
+                setNavbarIsExpanded={setNavbarIsExpanded} 
+                />
                 <Logo />
                 <SearchBar />
             </nav>

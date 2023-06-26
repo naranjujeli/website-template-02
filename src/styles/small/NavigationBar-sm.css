@@ -8,4 +8,18 @@
     .Logo {
         grid-column: 3;
     }
+
+    .NavigationBarToggler {
+        aspect-ratio: 1/1;
+        height: 100%;
+
+        display: block;
+    }
+
+    .NavigationBarToggler path {
+        stroke: white;
+        stroke-width: 5px;
+        stroke-linecap: round;
+        transform-origin: center center;
+    }
 }
