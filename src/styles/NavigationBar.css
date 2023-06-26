@@ -1,3 +1,11 @@
 .NavigationBar {
+    position: fixed;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-rows: 100%;
+
     background-color: var(--navbar-background);
 }
