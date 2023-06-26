@@ -1,5 +1,11 @@
 @media (max-width: 768px) {
     .NavigationBar {
         height: 80px;
+        
+        grid-template-columns: 20% auto 20%;
+    }
+
+    .Logo {
+        grid-column: 3;
     }
 }
