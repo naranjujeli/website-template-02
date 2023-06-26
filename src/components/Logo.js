@@ -16,7 +16,6 @@ function Logo() {
             viewBox="0 0 100 100"
             >
                 <motion.path
-                className="Logo-path"
                 transition={{ 
                     pathLength: {
                         duration: 2,
