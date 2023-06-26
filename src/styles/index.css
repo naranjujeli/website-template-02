@@ -1,16 +1,18 @@
 :root {
-    --background-color: #333;
-    --foreground-color: #DDD;
+    --background: #333;
+    --foreground: #DDD;
+    --navbar-background: #222;
 
     overflow-x: hidden;
 }
 
 body {
-    background-color: var(--background-color);
+    margin: 0;
+    background-color: var(--background);
 }
 
 body > * {
-    color: var(--foreground-color);
+    color: var(--foreground);
 }
 
 /*
