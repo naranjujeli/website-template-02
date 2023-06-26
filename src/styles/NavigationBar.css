@@ -9,3 +9,20 @@
 
     background-color: var(--navbar-background);
 }
+
+.Logo {
+    aspect-ratio: 1/1;
+    height: 100%;
+
+    /* So the browser doesn't display any indicators of selection while tapping */
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color:  rgba(0, 0, 0, 0);
+
+    /* But, in order to indicate tapping is animated */
+    cursor: pointer;
+}
+
+.Logo-path {
+    stroke-linecap: round;
+}
