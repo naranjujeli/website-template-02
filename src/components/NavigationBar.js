@@ -9,16 +9,17 @@ import '../styles/small/NavigationBar-sm.css';
 import '../styles/medium/NavigationBar-md.css';
 import '../styles/large/NavigationBar-lg.css';
 
-function NavigationBar() {
+function NavigationBar({ smallDevice }) {
     const [ navbarIsExpanded, setNavbarIsExpanded ] = useState(false);
 
     return (
         <>
             <nav className="NavigationBar">
+                { smallDevice &&
                 <NavigationBarToggler 
                 navbarIsExpanded={navbarIsExpanded} 
                 setNavbarIsExpanded={setNavbarIsExpanded} 
-                />
+                /> }
                 <Logo />
                 <SearchBar />
             </nav>
