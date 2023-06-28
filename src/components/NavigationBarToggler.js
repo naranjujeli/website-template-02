@@ -1,6 +1,16 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 function NavigationBarToggler({ navbarIsExpanded, setNavbarIsExpanded }) {
+    useEffect(() => {
+        return (() => {
+            // Every time the user resizes de window to make it bigger, this
+            // value resets, so the next time the window is shrunken it is
+            // not expanded anymore if it initialy.
+            setNavbarIsExpanded(false);
+        });
+    }, []);
+    
     const transitionOptions = { duration: .2, type: "tween", ease: "easeOut" };
     
     return (
