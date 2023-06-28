@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import NavigationBarToggler from  './NavigationBarToggler';
 import Logo from './Logo';
@@ -16,7 +17,19 @@ function NavigationBar() {
 
     return (
         <>
-            <nav className="NavigationBar">
+            <motion.nav 
+            className="NavigationBar"
+            variants={{
+                "hide": {
+                    clipPath: "polygon(0 0, 100% 0, 100% 80px, 0 80px)"
+                },
+                "show": {
+                    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+                }
+            }}
+            initial="hide"
+            animate={navbarIsExpanded ? "show" : "hide"}
+            >
                 { deviceIsSmall &&
                 <NavigationBarToggler 
                 navbarIsExpanded={navbarIsExpanded} 
@@ -24,7 +37,7 @@ function NavigationBar() {
                 /> }
                 <Logo />
                 <SearchBar />
-            </nav>
+            </motion.nav>
         </>
     );
 }

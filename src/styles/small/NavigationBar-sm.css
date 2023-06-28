@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
     .NavigationBar {
-        height: 80px;
-        
+        height: 100%;
         grid-template-columns: 25% auto 25%;
+        grid-template-rows: 80px auto;
     }
 
     .Logo {

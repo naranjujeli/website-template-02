@@ -21,8 +21,6 @@ function NavigationBarToggler({ navbarIsExpanded, setNavbarIsExpanded }) {
                         rotate: [0, 0, 45]
                     }
                 }}
-                initial="hide"
-                animate={ navbarIsExpanded ? "show" : "hide"}
                 transition={transitionOptions}
                 d="M 20 30 h 60"
                 />
