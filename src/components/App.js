@@ -7,18 +7,9 @@ import Footer from './Footer';
 import '../styles/App.css';
 
 export default function App() {
-  const [smallDevice, setSmallDevice] = useState(window.innerWidth<=768);
-  
-  function handleWindowResize() {
-    setSmallDevice(window.innerWidth<=768);
-    console.log("executing handleWindowResize")
-  }
-
-  window.addEventListener("resize", handleWindowResize);
-
   return (
     <div className="App">
-      <NavigationBar smallDevice={smallDevice} />
+      <NavigationBar />
       <ContentSection />
       <Footer />
     </div>
