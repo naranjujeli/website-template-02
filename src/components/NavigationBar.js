@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import NavigationBarToggler from  './NavigationBarToggler';
 import Logo from './Logo';
 import SearchBar from './SearchBar';
+import Option from './Option';
 import useDeviceIsSmall from '../hooks/useDeviceIsSmall';
 
 import '../styles/NavigationBar.css';
@@ -14,6 +15,11 @@ import '../styles/large/NavigationBar-lg.css';
 function NavigationBar() {
     const [ navbarIsExpanded, setNavbarIsExpanded ] = useState(false);
     const deviceIsSmall = useDeviceIsSmall();
+
+    let optionButtons = [];
+    for (let i = 0; i < 3; i++) {
+        optionButtons.push(<Option key={i} number={i+1} />);
+    }
 
     return (
         <>
@@ -37,6 +43,7 @@ function NavigationBar() {
                 /> }
                 <Logo />
                 <SearchBar />
+                {optionButtons}
             </motion.nav>
         </>
     );

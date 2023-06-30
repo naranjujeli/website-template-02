@@ -29,3 +29,10 @@
 .Logo path {
     stroke-linecap: round;
 }
+
+.Option {
+    border: none;
+    outline: none;
+    color: var(--foreground);
+    background-color: transparent;
+}
