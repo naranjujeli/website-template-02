@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
 :root {
     --background: #333;
     --foreground: #DDD;
@@ -13,6 +15,7 @@ body {
 
 body > * {
     color: var(--foreground);
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 /*

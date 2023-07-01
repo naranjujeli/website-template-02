@@ -1,3 +1,21 @@
 @media (max-width: 768px) {
+    .ContentSection {
+        margin-top: 80px;
+    }
+
+    .Welcome {
+        height: 80vh;
     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Welcome h1 {
+        bottom: 4vh;
+
+        text-align: center;
+        font-size: 5vh;
+    }
 }
